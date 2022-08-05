@@ -1,0 +1,338 @@
+db.employee.insertMany([
+	{
+		"_id": '123456789', 
+		"name": {
+			"first": 'John', 
+			"last": 'Smith' 
+		},
+		"birth_date": ISODate("1965-01-09"), 
+		"address": '731 Fondren, Houston, TX',
+		"gender": 'M', 
+		"boss_emp_no": '333445555', 
+		"dept_number": 5,
+		"salaries" : [
+			{
+				"salary": 60117,
+				"from_date": ISODate("1986-06-26"),
+				"to_date": ISODate("1987-06-26")
+			},
+			{
+				"salary": 62102,
+				"from_date": ISODate("1987-06-26"),
+				"to_date": ISODate("1988-06-25")
+			}
+		],
+		"titles": [
+			{
+				"title": 'Senior Engineer',
+				"from_date": ISODate("1986-06-26")
+			}
+		],
+		"works_on" : [
+			{
+				"proj_number": 1,
+				"hours": 32.5
+			},
+			{
+				"proj_number": 2,
+				"hours": 7.5
+			}
+		]
+	},
+	{
+		"_id": '333445555',
+		"name": {
+			"first": 'Franklin',
+			"last": 'Wong'
+		},
+		"birth_date": ISODate("1955-12-08"), 
+		"address": '638 Voss, Houston, TX',
+		"gender": 'M',
+		"boss_emp_no": '888665555',
+		"dept_number": 5,
+		"salaries" : [
+			{
+				"salary": 40054,
+				"from_date": ISODate("1986-12-01"),
+				"to_date": ISODate("1987-12-01")
+			},
+			{
+				"salary": 42283,
+				"from_date": ISODate("1987-12-01"),
+				"to_date": ISODate("1988-11-30")
+			},
+			{
+				"salary": 42542,
+				"from_date": ISODate("1988-11-30"),
+				"to_date": ISODate("1989-11-30")
+			},
+			{
+				"salary": 46065,
+				"from_date": ISODate("1989-11-30"),
+				"to_date": ISODate("1990-11-30")
+			}
+		],
+		"titles": [
+			{
+				"title": 'Engineer',
+				"from_date": ISODate("1986-12-01"),
+				"to_date": ISODate("1995-12-01"),
+			},
+			{
+				"title": 'Senior Engineer',
+				"from_date": ISODate("1995-12-01")
+			}
+		],
+		"works_on" : [
+			{
+				"proj_number": 2,
+				"hours": 10.0
+			},
+			{
+				"proj_number": 3,
+				"hours": 10.0
+			},
+			{
+				"proj_number": 10,
+				"hours": 10.0
+			},
+			{
+				"proj_number": 20,
+				"hours": 10.0
+			}
+		]
+	},
+	{
+		"_id": '999887777',
+		"name": {
+			"first": 'Alicia',
+			"last": 'Zelaya'
+		},
+		"birth_date": ISODate("1968-01-19"),
+		"address": '3321 Castle, Spring, TX',
+		"gender": 'F',
+		"boss_emp_no": '987654321',
+		"dept_number": 4, 
+		"salaries" : [
+			{
+				"salary": 78228,
+				"from_date": ISODate("1989-09-12"),
+				"to_date": ISODate("1990-09-12")
+			},
+			{
+				"salary": 82621,
+				"from_date": ISODate("1990-09-12"),
+				"to_date": ISODate("1991-09-12")
+			}
+		],
+		"titles": [
+			{
+				"title": 'Staff',
+				"from_date": ISODate("1989-09-12"),
+				"to_date": ISODate("1996-09-12")
+			},
+			{
+				"title": 'Senior Staff',
+				"from_date": ISODate("1996-09-12")
+			}
+		],
+		"works_on" : [
+			{
+				"proj_number": 30,
+				"hours": 30.0
+			},
+			{
+				"proj_number": 10,
+				"hours": 10.0
+			}
+		]
+	},
+	{
+		"_id": '987654321',
+		"name": {
+			"first": 'Jennifer',
+			"last": 'Wallace',
+		},
+		"birth_date": ISODate("1941-06-20"), 
+		"address": '291 Berry, Bellaire, TX',
+		"gender": 'F',
+		"boss_emp_no": '888665555',
+		"dept_number": 4,
+		"salaries" : [
+			{
+				"salary": 56724,
+				"from_date": ISODate("1989-02-10"),
+				"to_date": ISODate("1990-02-10")
+			},
+			{
+				"salary": 60740,
+				"from_date": ISODate("1990-02-10"),
+				"to_date": ISODate("1991-02-10")
+			}
+		],
+		"titles": [
+			{
+				"title": 'Staff',
+				"from_date": ISODate("1989-02-10"),
+				"to_date": ISODate("1996-02-11") 
+			},
+			{
+				"title": 'Senior Staff',
+				"from_date": ISODate("1996-02-11")
+			}
+		],
+		"works_on" : [
+			{
+				"proj_number": 30,
+				"hours": 20.0
+			},
+			{
+				"proj_number": 20,
+				"hours": 15.0
+			}
+		]
+	},
+	{
+		"_id": '666884444',
+		"name": {
+			"first": 'Ramesh',
+			"last": 'Narayan'
+		},
+		"birth_date": ISODate("1962-09-15"), 
+		"address": '975 Fire Oak, Humble, TX',
+		"gender": 'M',
+		"boss_emp_no": '333445555',
+		"dept_number": 5,
+		"salaries" : [
+			{
+				"salary": 65828,
+				"from_date": ISODate("1996-08-03"),
+				"to_date": ISODate("1997-08-03")
+			}
+		],
+		"titles": [
+			{
+				"title": 'Staff',
+				"from_date": ISODate("1996-08-03")
+			}
+		],
+		"works_on" : [
+			{
+				"proj_number": 3,
+				"hours": 40.0
+			}
+		]
+	},
+	{
+		"_id": '453453453',
+		"name": {
+			"first": 'Joyce',
+			"last": 'English',
+		},
+		"birth_date": ISODate("1972-07-31"), 
+		"address": '5631 Rice, Houston, TX',
+		"gender": 'F',
+		"boss_emp_no": '333445555',
+		"dept_number": 5,
+		"salaries" : [
+			{
+				"salary": 40006,
+				"from_date": ISODate("1995-12-03"),
+				"to_date": ISODate("1996-12-02")
+			},
+			{
+				"salary": 43616,
+				"from_date": ISODate("1996-12-02"),
+				"to_date": ISODate("1997-12-02")
+			}
+		],
+		"titles": [
+			{
+				"title": 'Senior Engineer',
+				"from_date": ISODate("1995-12-03")
+			}
+		],
+		"works_on" : [
+			{
+				"proj_number": 1,
+				"hours": 20.0
+			},
+			{
+				"proj_number": 2,
+				"hours": 20.0
+			}
+		]
+	},
+	{
+		"_id": '987987987',
+		"name": {
+			"first": 'Ahmad',
+			"last": 'Jabbar'
+		},
+		"birth_date": ISODate("1969-03-29"),
+		"address": '980 Dallas, Houston, TX',
+		"gender": 'M',
+		"boss_emp_no": '987654321',
+		"dept_number": 4,
+		"salaries" : [
+			{
+				"salary": 40000,
+				"from_date": ISODate("1990-08-05"),
+				"to_date": ISODate("1991-08-05")
+			},
+			{
+				"salary": 42085,
+				"from_date": ISODate("1991-08-05"),
+				"to_date": ISODate("1992-08-04")
+			}
+		],
+		"titles": [
+			{
+				"title": 'Senior Engineer',
+				"from_date": ISODate("1990-08-05")
+			}
+		],
+		"works_on" : [
+			{
+				"proj_number": 10,
+				"hours": 35.0
+			},
+			{
+				"proj_number": 30,
+				"hours": 5.0
+			}
+		]
+	},
+	{
+		"_id": '888665555',
+		"name": {
+			"first": 'James',
+			"last": 'Borg'
+		},
+		"birth_date": ISODate("1937-11-10"), 
+		"address": '450 Stone, Houston, TX',
+		"gender": 'M',
+		"boss_emp_no": null,
+		"dept_number": 1,
+		"salaries" : [
+			{
+				"salary": 46671,
+				"from_date": ISODate("1998-03-11"),
+				"to_date": ISODate("1999-03-11")
+			}
+		],
+		"titles": [
+			{
+				"title": 'Assistant Engineer',
+				"from_date": ISODate("1998-03-11"),
+				"to_date": ISODate("2000-07-31"),
+			}
+		],
+		"works_on" : [
+			{
+				"proj_number": 20,
+				"hours": 0.5
+			}
+		]
+	}
+])
