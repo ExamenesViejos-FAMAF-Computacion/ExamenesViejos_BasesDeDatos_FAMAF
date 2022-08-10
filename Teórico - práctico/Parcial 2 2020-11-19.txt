@@ -1,0 +1,67 @@
+Dado el siguiente esquema:
+aula(edificio, aulaNro, capacidad)
+facultad(nombreFacultad, edificio, presupuesto)
+curso(idCurso, título, nombreFacultad, créditos)
+profe(ID, nombre, nombreFacultad, salario)
+actividad(idCurso, idAct, semestre, año, edificio, aulaNro, idDurClase)
+enseña(ID, idCurso, idAct, semestre, año)
+estudiante(ID, nombre, nombreFacultad, total de créditos)
+toma(ID, idCurso, idAct, semestre, año, nota)
+supervisore(IDe, IDp)
+horarios(idDurClase, día, horaInicio, horaFin)
+correlativa(idCurso, idPre-requisito)
+
+Escriba las consultas utilizando los operadores vistos de álgebra relacional
+1 - Facultad con mayor presupuesto
+2 - Cantidad de aulas por facultad
+3 - Nombre de estudiante con mejor promedio del 2020 por facultad
+4 - Docentes que hayan dictado clases pero no en el 2020
+
+
+Se tienen las siguientes tablas y sus índices, donde los números indican 1 : índice primario, 2 : índice secundario:
+
+Tabla                                                  Índice
+proveedor(pID, pNombre, pCiudad)  pID 1 , pCiudad 2
+trabajo(tID, tNombre, tCiudad)  tID 1 , tCiudad 2
+maquina(mID, mNombre, color, peso)  mID 1 , mNombre 2
+ptm(pID, tID, mID)                          (pID, tID, mID) 1
+Las referencias foráneas son las obvias (aquellas que comparten el mismo nombre de atributo). El tamaño de un bloque es de 10kB (10  x 1024 bytes), y se estiman los siguientes tamaños de tablas:
+
+proveedor: 1000 proveedores en 100 bloques.
+trabajo: 100 trabajos en 10 bloques.
+maquina: 5000 máquinas en 400 bloques.
+ptm: Cada trabajo está provisto por 5 proveedores, que proveen 4 máquinas cada uno a ese trabajo. 10 bloques.
+
+Luego, puede asumir el tamaño de RAM que desee (no menor a 3 bloques).
+
+5 - Calcule el costo total en bloques de las siguiente operación:
+  Π color (σ pID=p₁ (maquina ⋈ ptm))
+
+Explique detalladamente cómo obtiene cada valor intermedio. Si necesita alguna información extra, puede preguntar o asumir el valor que quiera (pero debe indicarlo claramente).
+
+6 - Con los valores y consideraciones del ejercicio a), resuelva el costo total de la siguiente operación: υ(Π pID (σ tID=t₁ ∧color=r (maquina ⋈ ptm)))
+
+7- Ahora calcule el costo de la siguiente consulta (misma consideraciones):
+ptm ⋈ σ pCiudad = tCiudad (proveedor × trabajo)
+
+8 -Sea R = (A, B, C, D, E, F, G) con el conjunto de DF.
+
+H = {A -> CD; CE -> AD; CF ->  EB; E  -> F; CD -> E; G -> E}
+
+¿Cuánto da CF+ bajo H?  Solo dar resultado (poner atributos separados por ',' y ordenados alfabéticamente) , no justificar. (esta era Multiple choice)
+
+9 - Considere el R y el H de la pregunta anterior.
+
+¿Está A->G en H+? Justifique su respuesta.
+
+10 - Considere el H de la pregunta anterior.
+
+¿Está (A, B, C, F) en FNBC? justifique su respuesta.
+
+ 11-- Considerar H como en el ejercicio anterior.
+
+Aplicar un paso de iteración del algoritmo de normalización de FNBC. 
+
+La descomposición corriente es:  S = (A, B, E, F, G),   T = (A, C, D)
+
+Justifique sus afirmaciones.
